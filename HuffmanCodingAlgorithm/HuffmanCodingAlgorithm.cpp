@@ -23,11 +23,6 @@ void HuffmanCodingAlgorithm::encodeString(std::string stringToEncode) {
 	saveCoding();
 }
 
-void HuffmanCodingAlgorithm::decodeStoredFile() {
-	ifstream mapFile("/Users/michalmoskala/Programowanie/C++/HuffmanCodingAlgorithm/HuffmanCodingAlgorithm/map.txt", fstream::in);
-	
-}
-
 void HuffmanCodingAlgorithm::countOccurencesOfCharacters() {
 	for (char& c : this->stringToEncode) {
 		if (charMap.find(c) == charMap.end()) {
@@ -53,11 +48,10 @@ void HuffmanCodingAlgorithm::printComputedCodes() {
 void HuffmanCodingAlgorithm::buildTree() {
 	createNodeQueue();
 	Node* ptr1 = NULL;	Node* ptr2 = NULL;
+	
 	while (nodeQueue.size() > 1) {
-		ptr1 = nodeQueue.top();
-		nodeQueue.pop();
-		ptr2 = nodeQueue.top();
-		nodeQueue.pop();
+		ptr1 = nodeQueue.top();		nodeQueue.pop();
+		ptr2 = nodeQueue.top();		nodeQueue.pop();
 		
 		Node* node = new Node();
 		node->value = ptr1->value + ptr2->value;
@@ -66,8 +60,7 @@ void HuffmanCodingAlgorithm::buildTree() {
 		nodeQueue.push(node);
 	}
 	
-	Node* head = nodeQueue.top();
-	nodeQueue.pop();
+	Node* head = nodeQueue.top();	nodeQueue.pop();
 	string str;
 	calculateComputedCodes(head, str);
 }

@@ -11,6 +11,7 @@
 		3509978D1A29F9CA00AB46C0 /* HuffmanCodingAlgorithm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3509978B1A29F9CA00AB46C0 /* HuffmanCodingAlgorithm.cpp */; };
 		350997911A2A062800AB46C0 /* NodeComparator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3509978F1A2A062800AB46C0 /* NodeComparator.cpp */; };
 		350997941A2A0AA300AB46C0 /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 350997921A2A0AA300AB46C0 /* Node.cpp */; };
+		350997971A2A2A2700AB46C0 /* HuffmanDecoderAlgorithm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 350997951A2A2A2700AB46C0 /* HuffmanDecoderAlgorithm.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		350997901A2A062800AB46C0 /* NodeComparator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeComparator.h; sourceTree = "<group>"; };
 		350997921A2A0AA300AB46C0 /* Node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Node.cpp; sourceTree = "<group>"; };
 		350997931A2A0AA300AB46C0 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		350997951A2A2A2700AB46C0 /* HuffmanDecoderAlgorithm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HuffmanDecoderAlgorithm.cpp; sourceTree = "<group>"; };
+		350997961A2A2A2700AB46C0 /* HuffmanDecoderAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HuffmanDecoderAlgorithm.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,8 @@
 				350997901A2A062800AB46C0 /* NodeComparator.h */,
 				350997921A2A0AA300AB46C0 /* Node.cpp */,
 				350997931A2A0AA300AB46C0 /* Node.h */,
+				350997951A2A2A2700AB46C0 /* HuffmanDecoderAlgorithm.cpp */,
+				350997961A2A2A2700AB46C0 /* HuffmanDecoderAlgorithm.h */,
 			);
 			path = HuffmanCodingAlgorithm;
 			sourceTree = "<group>";
@@ -137,6 +142,7 @@
 				350997911A2A062800AB46C0 /* NodeComparator.cpp in Sources */,
 				3509978D1A29F9CA00AB46C0 /* HuffmanCodingAlgorithm.cpp in Sources */,
 				350997941A2A0AA300AB46C0 /* Node.cpp in Sources */,
+				350997971A2A2A2700AB46C0 /* HuffmanDecoderAlgorithm.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,14 +9,18 @@
 #include <iostream>
 #include <fstream>
 #include "HuffmanCodingAlgorithm.h"
+#include "HuffmanDecoderAlgorithm.h"
 #include <string>
 
 using namespace std;
 
 int main(int argc, const char * argv[]) {
 	HuffmanCodingAlgorithm *algorithm = new HuffmanCodingAlgorithm();
-	string stringToEncode = "missipi";
+	string stringToEncode = "ala ma kota";
 	algorithm->encodeString(stringToEncode);
+	
+	HuffmanDecoderAlgorithm *decoder = new HuffmanDecoderAlgorithm();
+	decoder->decodeStoredFile();
 	
   return 0;
 }
